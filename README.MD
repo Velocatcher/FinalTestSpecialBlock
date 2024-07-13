@@ -30,12 +30,16 @@
 
 ┗━➤  cat pet.txt pack_animals.txt > animals.txt 
 
+![tabl1](2.png)
+
 - Переименовать получившийся файл в "Human Friends".
 
 ┏━[17:35:54]  
 ┃ /home/catcher
 
 ┗━➤  mv animals.txt human_friends.txt 
+
+![tabl1](3.png)
 
 ## 2. Работа с директориями в Linux
 
@@ -51,6 +55,9 @@
 
 ┗━➤  mv human_friends.txt animal_nursery/
 
+![tabl1](4.png)
+
+![tabl1](5.png)
 
 ## 3. Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
 
@@ -61,15 +68,23 @@
 
 ┗━➤  sudo apt-get update
 
+![tabl1](6.png)
+
 ┏━[08:38:04]  
 ┃ /home/catcher
 
 ┗━➤  wget [https://repo.mysql. com/mysql-apt-config_0.8.9-1_all.deb](https://repo.mysql.com/mysql-apt-config_0.8.9-1_all.deb)
 
+![tabl1](7.png)
+
+![tabl1](8.png)
+
 ┏━[08:47:46]  
 ┃ /home/catcher
 
 ┗━➤  sudo apt list 'sql*'
+
+![tabl1](9.png)
 
 ┏━[08:40:47]  
 ┃ /home/catcher
@@ -81,10 +96,14 @@
 
 ┗━➤  systemctl status mysql.service
 
+![tabl1](10.png)
+
 ┏━[09:09:45]  
 ┃ /home/catcher
 
 ┗━➤  sudo mysql -u root -p
+
+![tabl1](11.png)
 
 
 ## 4. Управление deb-пакетами
@@ -118,7 +137,9 @@
 ┃ /home/catcher/Загрузки
 
 ┗━➤  sudo dpkg -i google-chrome-stable\_current\_amd64.deb    
+![tabl1](12.png)
 
+![tabl1](13.png)
 
 - Удаление пакета:
 
@@ -127,6 +148,7 @@
 
 ┗━➤  sudo dpkg --remove google-chrome-stable 
 
+![tabl1](14.png)
 
 ## Объектно-ориентированное программирование ## 
 
@@ -134,6 +156,7 @@
 
 - Создать диаграмму классов с родительским классом "Животные", и двумя подклассами: "Pets" и "Pack animals".
 
+![tabl1](16.jpg)
 
  ## 7. Работа с MySQL (Задача выполняется в случае успешного выполнения задачи “Работа с MySQL в Linux. “Установить MySQL на вашу машину”
 
@@ -406,6 +429,12 @@ Query OK, 3 rows affected (0,01 sec)
 
 Records: 3  Duplicates: 0  Warnings: 0
 
+![tabl1](17.png)
+
+![tabl1](18.png)
+
+![tabl1](19.png)
+
 ***
 - Удалить записи о верблюдах и объединить таблицы лошадей и ослов.
 
@@ -447,6 +476,7 @@ Query OK, 15 rows affected (0,00 sec)
 
 Records: 15  Duplicates: 0  Warnings: 0
 
+![tabl1](20.png)
 
 mysql> CREATE TABLE youngAnimals AS
 
@@ -457,6 +487,8 @@ mysql> CREATE TABLE youngAnimals AS
 Query OK, 6 rows affected (0,09 sec)
 
 Records: 6  Duplicates: 0  Warnings: 0
+
+![tabl1](21.png)
 
 - Объединить все созданные таблицы в одну, сохраняя информацию о принадлежности к исходным таблицам.
 
@@ -507,6 +539,8 @@ Records: 6  Duplicates: 0  Warnings: 0
 -> LEFT JOIN youngAnimals ya ON ya.Name = hm.Name
 
 -> LEFT JOIN pets p ON p.Id = hm.Pet_id;
+
+
 ***
 # 8. ООП и Java
 
